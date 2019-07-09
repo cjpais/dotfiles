@@ -1,0 +1,72 @@
+"general settings
+filetype plugin indent on
+syntax on
+set nu
+set nocompatible
+set tabstop=2
+set shiftwidth=2
+set bs=2
+set expandtab
+set autoindent
+set smartindent
+set cindent
+set ruler
+set cursorline
+set noswapfile
+set ignorecase
+set smartcase
+set hlsearch
+set noerrorbells
+
+" fix for lightline
+set laststatus=2
+
+" Marks should go to the column, not just the line. Why isn't this the default?
+nnoremap ' `
+
+" These are things that I mistype and want ignored.
+nmap Q  <silent>
+nmap q: <silent>
+
+" Map F12 to regen tags
+map <F12> :! cscope -Rbq<CR>
+
+" Turn off linewise keys. Normally, the `j' and `k' keys move the cursor down
+" one entire line. with line wrapping on, this can cause the cursor to actually
+" skip a few lines on the screen because it's moving from line N to line N+1 in
+" the file. I want this to act more visually -- I want `down'
+" to mean the next line on the screen
+nmap j gj
+nmap k gk
+
+set tags=./tags;/
+set csre
+
+let g:seoul256_background = 235
+let g:seoul256_light_background = 252
+colo seoul256
+set background=dark
+
+" Map fuzzy finder to ctrl-p
+map <C-p> :Files<CR>
+
+if has("win64") || has("win32") || has("win16")
+  call plug#begin('~\vimfiles\plugged')
+else
+  call plug#begin('~/.vim/plugged')
+endif
+
+Plug 'scrooloose/nerdtree'
+Plug 'itchyny/lightline.vim'
+Plug 'chazy/cscope_maps'
+Plug 'vim-scripts/autoload_cscope.vim'
+Plug '~/.fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'mileszs/ack.vim'
+Plug 'vim-scripts/taglist.vim'
+Plug 'majutsushi/tagbar'
+Plug 'godlygeek/tabular'
+Plug 'junegunn/seoul256.vim'
+Plug 'tpope/vim-surround'
+
+call plug#end()
