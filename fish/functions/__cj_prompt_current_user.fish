@@ -6,5 +6,5 @@ else
     set_color $fish_color_user
 end
 
-    echo $USER (_cj_directory_separator)
+    echo $USER (_pure_prompt_ssh_separator) (_cj_local_machine) (_cj_directory_separator)
 end
