@@ -1,5 +1,5 @@
 if type -q grc
-  set -l execs cat cvs df diff dig gcc g++ ls ifconfig \
+  set -l execs cat cvs df diff dig gcc g++ ifconfig \
                make mount mtr netstat ping ps tail traceroute \
                wdiff
 
