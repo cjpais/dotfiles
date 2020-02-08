@@ -6,7 +6,5 @@ else
     set_color $fish_color_user
 end
 
-    echo "$USER"
-    set_color $pure_color_normal
-    echo "@"
+    echo ("$USER") (_cj_directory_separator)
 end
