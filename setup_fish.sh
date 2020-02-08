@@ -1,4 +1,4 @@
-#!/usr/local/bin/fish
+#!/usr/bin/env fish
 
 # Install fisher
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
@@ -14,5 +14,6 @@ fisher add jethrokuan/z
 # Theme
 fisher add rafaelrinaldi/pure
 
-# Copy custom functions to fish config directory
+# Copy custom functions and config to fish config directory
 cp fish/functions/* ~/.config/fish/functions/.
+cp fish/conf.d/* ~/.config/fish/conf.d/.
