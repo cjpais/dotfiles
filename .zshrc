@@ -16,10 +16,10 @@ alias rmnode="rm -rf node_modules yarn.lock package-lock.json"
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Include GRC (to colorize prompt pretty :)
-source ~/.zsh/grc/grc.zsh
+source ~/.zsh/grc.zsh
 
 # Include Fish like Autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # z Directory Hopper
-source ~/.zsh/zsh-z/zsh-z.plugin.zsh
+source ~/.zsh/zsh-z.plugin.zsh
